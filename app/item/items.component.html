@@ -1,0 +1,12 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <GridLayout rows="auto, *" columns="auto, *" margin="16dp">
+        <Label row="0" col="0" text="Display NGRX Label" verticalAlignment="middle" horizontalAlignment="Left" fontSize="16dp" textWrap="true"></Label>
+        <Switch row="0" col="1" (checkedChange)="onSwitchChecked($event)" horizontalAlignment="Left" class="switch"></Switch>
+        <Label row="1" colSpan="1" colSpan="2" verticalAlignment="middle" *ngIf="showLabel" horizontalAlignment="center" text="I am a NGRX LABEL!!!"
+            textWrap="true"></Label>
+    </GridLayout>
+
+</StackLayout>
