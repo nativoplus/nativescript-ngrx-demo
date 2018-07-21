@@ -3,12 +3,12 @@ import { ItemState } from "~/item/states/item.state";
 import { ItemActionTypes, ItemActions } from "../actions/items.actions";
 
 const initialState: ItemState = {
-    showLabel: true
+    showLabel: false
 };
-const getShowLabelFeature = createFeatureSelector<ItemState>("items");
+const getItemFeature = createFeatureSelector<ItemState>("items");
 
 export const getShowLabel = createSelector(
-    getShowLabelFeature,
+    getItemFeature,
     state => state.showLabel
 );
 
